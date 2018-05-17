@@ -5,9 +5,9 @@ describe('Hello', function () {
   describe('/hello/:name endpoint', function () {
     it('returns a welcome message based on the name', function (done) {
       hippie()
-        .get('http://localhost:8080/hello/john')
+        .get('http://localhost:8080/hello/cuongthn')
         .expectStatus(200)
-        .expectBody('"hello john"')
+        .expectBody('"How are you cuongthn"')
         .end(function(err, res, body) {
           if (err) throw err;
           done();
