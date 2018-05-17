@@ -6,7 +6,7 @@ var server = restify.createServer();
 
 // Greeting endpoint.
 server.get('/hello/:name', function(req, res, next) {
-  res.send('hello ' + req.params.name);
+  res.send('How are you ' + req.params.name);
   next();
 });
 
