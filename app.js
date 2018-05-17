@@ -5,8 +5,8 @@ var ping = require('jjg-ping');
 var server = restify.createServer();
 
 // Greeting endpoint.
-server.get('/hello/:name', function(req, res, next) {
-  res.send('How are you ' + req.params.name);
+server.get('/how-are-you/:name', function(req, res, next) {
+  res.send('How-are-you ' + req.params.name);
   next();
 });
 
